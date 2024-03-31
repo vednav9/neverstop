@@ -3,41 +3,90 @@
 
 <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Beyond</title>
-      
+
+      <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
       <!--Boostrap Links-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      
+
       <link rel="stylesheet" href="home.css">
 </head>
 
-<body>
-      <div class="container">
-            <nav>
-                  <img src="images/logo.png" class="logo">
-                  <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#"><button class="btn"><img src="images/icon.png">Sign Up</button></a></li>
-                  </ul>
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+      <header id="header" class="header fixed-top d-flex align-items-center">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                  <a href="home.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                        <!-- Uncomment the line below if you also wish to use an image logo -->
+                        <!-- <img src="assets/img/logo.png" alt=""> -->
+                        <h1>Append</h1>
+                        <span>.</span>
+                      </a>
+                
+                      <!-- Nav Menu -->
+                      <nav id="navmenu" class="navmenu">
+                        <ul>
+                          <li><a href="index.html#hero" class="active">Home</a></li>
+                          <li><a href="index.html#about">About</a></li>
+                          <li><a href="index.html#services">Services</a></li>
+                          <li><a href="index.html#portfolio">Portfolio</a></li>
+                          <li><a href="index.html#team">Team</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul class="dd-box-shadow">
+                              <li><a href="#">Dropdown 1</a></li>
+                              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul class="dd-box-shadow">
+                                  <li><a href="#">Deep Dropdown 1</a></li>
+                                  <li><a href="#">Deep Dropdown 2</a></li>
+                                  <li><a href="#">Deep Dropdown 3</a></li>
+                                  <li><a href="#">Deep Dropdown 4</a></li>
+                                  <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#">Dropdown 2</a></li>
+                              <li><a href="#">Dropdown 3</a></li>
+                              <li><a href="#">Dropdown 4</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                
+                        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                      </nav><!-- End Nav Menu -->
+                
+                      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+                
+                    </div>
+                  </header><!-- End Header -->
+
+                  <section id="hero" class="hero">
+
+                        <img src="images/background.png" alt="" data-aos="fade-in">
                   
-            </nav>
-
-            <div class="content">
-                  <h1>Unlock<br>Your Potential </h1>
-                  <p>.</p>
-                  <form>
-                        <input type="text" placeholder="Search event">
-                        <button type="submit" class="btn">Search</button>
-                  </form>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-10">
+                              <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
+                              <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+                            </div>
+                            <div class="col-lg-5">
+                              <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <input type="text" class="form-control" placeholder="Enter email address">
+                                <input type="submit" class="btn btn-primary" value="Sign up">
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                  
+                      </section><!-- End Hero Section -->
             </div>
-      </div>
-
-
+      </header>
 </body>
 
 </html>
