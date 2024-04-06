@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="about.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
 
 </head>
 
@@ -22,7 +22,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="home.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="home.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Beyond</h1>
@@ -32,11 +32,11 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="event.html">Event</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="home.php" class="active">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="learn.php">Learn</a></li>
+          <li><a href="event.php">Event</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
           <!--<li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a href="#">Dropdown 1</a></li>
@@ -60,7 +60,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.html#about">Profile</a>
+      <a class="btn-getstarted" href="index.php#about">Profile</a>
 
     </div>
   </header><!-- End Header -->
@@ -170,7 +170,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="index.php" class="logo d-flex align-items-center">
             <span>Append</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta

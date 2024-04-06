@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="home.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 
 </head>
 
@@ -22,7 +22,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="home.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="home.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Beyond</h1>
@@ -32,11 +32,11 @@
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="event.html">Event</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="home.php" class="active">Home</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="learn.php">Learn</a></li>
+          <li><a href="event.php">Event</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
           <!--<li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
               <li><a href="#">Dropdown 1</a></li>
@@ -154,7 +154,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Lorem Ipsum</a></h4>
                 <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
                   occaecati cupiditate non provident</p>
               </div>
@@ -166,7 +166,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Dolor Sitema</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Dolor Sitema</a></h4>
                 <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                   commodo consequat tarad limino ata</p>
               </div>
@@ -177,7 +177,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Sed ut perspiciatis</a></h4>
                 <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                   fugiat nulla pariatur</p>
               </div>
@@ -188,7 +188,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Magni Dolores</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Magni Dolores</a></h4>
                 <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                   deserunt mollit anim id est laborum</p>
               </div>
@@ -199,7 +199,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Nemo Enim</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Nemo Enim</a></h4>
                 <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                   praesentium voluptatum deleniti atque</p>
               </div>
@@ -210,7 +210,7 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Eiusmod Tempor</a></h4>
                 <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                   soluta nobis est eligendi</p>
               </div>
@@ -284,7 +284,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="index.php" class="logo d-flex align-items-center">
             <span>Append</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
