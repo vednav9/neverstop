@@ -83,7 +83,7 @@ else
    
    <section class="flex">
 
-      <a class="logo" href="home.php">
+      <a class="logo" href="index.php">
         <img src="images/title.PNG">
       </a>
 
@@ -120,7 +120,7 @@ else
    </div>
 
    <nav class="navbar">
-      <a href="home.php"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="index.php"><i class="fas fa-home"></i><span>Home</span></a>
       <a href="about.php"><i class="fas fa-question"></i><span>About</span></a>
       <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
       <a href="contact.php"><i class="fas fa-headset"></i><span>Contact Us</span></a>

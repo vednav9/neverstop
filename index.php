@@ -20,6 +20,7 @@ session_start();
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -40,7 +41,7 @@ session_start();
         <ul>
           <li><a href="home.php" class="active">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="learn.php">Learn</a></li>
+          <li><a href="courses.php">Learn</a></li>
           <li><a href="event.php">Event</a></li>
           <li><a href="contact.php">Contact Us</a></li>
           <!--<li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>

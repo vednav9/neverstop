@@ -39,9 +39,9 @@ session_start();
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.php" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.php">About</a></li>
-          <li><a href="learn.php">Learn</a></li>
+          <li><a href="courses.php">Learn</a></li>
           <li><a href="event.php">Event</a></li>
           <li><a href="contact.php">Contact Us</a></li>
           <!--<li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
