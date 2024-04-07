@@ -3,7 +3,7 @@
 $sName = "localhost";
 $uName = "root";
 $pass = "";
-$db_name = "auth_db";
+$db_name = "skill_stream_db";
 
 
 try {

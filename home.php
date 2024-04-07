@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +16,8 @@
 
   <!-- Template Main CSS File -->
   <link href="css/home.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
 </head>
 
@@ -59,8 +64,17 @@
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
-
-      <a class="btn-getstarted" href="index.html#about">Sign In</a>
+      <?php 
+      if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
+      ?>
+        <a class="btn-getstarted" href="index.html#about"><i class="bi bi-person "></i> Profile</a>
+      <?php 
+        } else {
+      ?>
+        <a class="btn-getstarted" href="login.php"><i class="bi bi-person "></i> Sign In</a>
+      <?php 
+        } 
+      ?>
 
     </div>
   </header><!-- End Header -->
