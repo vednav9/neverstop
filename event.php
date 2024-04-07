@@ -18,6 +18,8 @@ session_start();
   <link href="css/ev.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
 </head>
 
@@ -67,7 +69,7 @@ session_start();
       <?php 
       if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
       ?>
-        <a class="btn-getstarted" href="logout.php"><i class="bi bi-person "></i> Profile</a>
+        <a class="btn-getstarted" href="logout.php"><i class="fas fa-sign-out"></i> Logout</a>
       <?php 
         } else {
       ?>
