@@ -67,7 +67,7 @@ session_start();
       <?php 
       if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
       ?>
-        <a class="btn-getstarted" href="logout.php"><i class="bi bi-person ">Profile</i></a>
+        <a class="btn-getstarted" href="logout.php"><i class="bi bi-person "></i> Profile</a>
         
       <?php 
         } else {

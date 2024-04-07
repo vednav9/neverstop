@@ -67,11 +67,11 @@ session_start();
       <?php 
       if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
       ?>
-        <a class="btn-getstarted" href="index.html#about"><i class="bi bi-person "></i> Login</a>
+        <a class="btn-getstarted" href="logout.php"><i class="bi bi-person "></i> Profile</a>
       <?php 
         } else {
       ?>
-        <a class="btn-getstarted" href="index.html#about"><i class="bi bi-person "></i> Sign In</a>
+        <a class="btn-getstarted" href="login.php"><i class="bi bi-person "></i> Sign In</a>
       <?php 
         } 
       ?>
