@@ -60,7 +60,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.html#about">Profile</a>
+      <a class="btn-getstarted" href="index.html#about">Sign In</a>
 
     </div>
   </header><!-- End Header -->
