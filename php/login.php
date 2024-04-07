@@ -47,7 +47,7 @@ if(isset($_POST['uname']) &&
                  $_SESSION['email'] = $email;
                  $_SESSION['pynum'] = $pynum;
 
-                 header("Location: ../home.php");
+                 header("Location: ../index.php");
                  exit;
              }else {
                $em = "Incorect User name or password";
