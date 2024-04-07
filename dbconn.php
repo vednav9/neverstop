@@ -4,7 +4,7 @@ $sname = "localhost";
 $uname = "root";
 $password = "";
 
-$db_name = "skill_stream_db";
+$db_name = "s4_project";
 
 $conn  = mysqli_connect($sname, $uname, $password, $db_name);
 
