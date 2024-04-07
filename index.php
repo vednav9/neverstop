@@ -29,7 +29,7 @@ session_start();
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="home.php" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Beyond</h1>
@@ -39,7 +39,7 @@ session_start();
       <!-- Nav Menu -->
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.php" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li><a href="about.php">About</a></li>
           <li><a href="courses.php">Learn</a></li>
           <li><a href="event.php">Event</a></li>
