@@ -102,11 +102,55 @@ session_start();
       <div class="container">
         <div class="navmenu">
           <ul>
-          <li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown has-dropdown"><a href="#"><span>Event Type</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down"></i></a>
+              <li><a href="#">Hackthon</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="#">Worshop</a></li>
+              <li><a href="#">Seminar</a></li>
+              <li><a href="#">Competition</a></li>
+              <li><a href="#">Codind Contest</a></li>
+              <li><a href="#">Cultural event</a></li>
+              <li><a href="#">Seminar</a></li>
+            </ul>
+          </li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Sort by</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">Prizez high to low</a></li>
+              <li><a href="#">Days left low to high</a></li>
+            </ul>
+          </li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Status</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">Live</a></li>
+              <li><a href="#">Closed</a></li>
+            </ul>
+          </li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Team size</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">2+</a></li>
+            </ul>
+          </li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Payment</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">Paid</a></li>
+              <li><a href="#">Free</a></li>
+            </ul>
+          </li>
+          <li class="dropdown has-dropdown"><a href="#"><span>Eligibility</span> <i class="bi bi-chevron-down"></i></a>
+            <ul class="dd-box-shadow">
+              <li><a href="#">Professional</a></li>
+              <li><a href="#">Collage student</a></li>
+            </ul>
+          </li>
+          </ul>
+        </div>
+        
+
+
+        <!--<li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down"></i></a>
                 <ul class="dd-box-shadow">
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -114,15 +158,7 @@ session_start();
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          </ul>
-        </div>
-        
+              </li>-->
 
         <div class="row gy-4">
           <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
