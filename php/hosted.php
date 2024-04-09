@@ -246,7 +246,7 @@ isset($_POST['fees'])){
       }
       else {
         $sql = "INSERT INTO host(ev_name, org_name, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
-        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$ev_name, $org_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
 
