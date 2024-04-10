@@ -87,13 +87,13 @@ session_start();
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="images/herobg.jpeg" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap
+            <h2 data-aos="fade-up" data-aos-delay="100">Unlock Your Potential</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Harness the power of technology to create a brighter future
             </p>
           </div>
           <div class="col-lg-5">
@@ -171,9 +171,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Team Formation</a></h4>
+                <p class="description">Facilitate team formation for participants by offering matchmaking 
+                  based on skills, interests, and project ideas.</p>
               </div>
             </div>
           </div>
@@ -183,9 +183,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat tarad limino ata</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Paticipation Management</a></h4>
+                <p class="description">Provide tools for managing participant registrations, including
+                   tracking attendee details, team formation, and communication</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -194,9 +194,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Resource Hub</a></h4>
+                <p class="description">Offer resources such as coding tutorials, project inspiration,
+                   API documentation, and technical articles to help participants prepare for the event</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -205,9 +205,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Feedback and Surveys</a></h4>
+                <p class="description"> Collect feedback from participants, organizers, 
+                  and sponsors through surveys and rating systems to improve future events.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -216,9 +216,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Event Listing and Registration</a></h4>
+                <p class="description">Allow organizers to list their hackathons and technical events
+                   on the website, along with registration forms for participants to sign up</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -227,9 +227,9 @@ session_start();
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
               <div>
-                <h4 class="title"><a href="services-details.php" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                  soluta nobis est eligendi</p>
+                <h4 class="title"><a href="services-details.php" class="stretched-link">Event Promotion</a></h4>
+                <p class="description">Promotion tools including email marketing, social media integration, 
+                  and event listing on the website.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -304,8 +304,10 @@ session_start();
           <a href="index.php" class="logo d-flex align-items-center">
             <span>Append</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Explore, innovate, and connect with our vibrant community of tech enthusiasts. 
+            Join us in empowering the next generation of creators and problem solvers through
+             immersive hackathons and technical events. Stay updated with the latest happenings,
+              industry insights, and upcoming events. Let's build, learn, and grow together.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -325,16 +327,7 @@ session_start();
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
@@ -348,16 +341,6 @@ session_start();
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
 
   </footer><!-- End Footer -->
 

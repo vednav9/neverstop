@@ -93,9 +93,7 @@
                         <div class="row d-flex justify-content-center text-center">
                             <div class="col-lg-8">
                                 <h1 class="">About Us<br></h1>
-                                <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo
-                                    odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis
-                                    natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                                <p class="mb-0"></p>
                             </div>
                         </div>
                     </div>
@@ -184,167 +182,7 @@
 
         </section><!-- /Stats About Section -->
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-                <p class="">What are they saying</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="swiper">
-                    <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 40
-                  },
-                  "1200": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 20
-                  }
-                }
-              }
-            </script>
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                            Maecen aliquam, risus at semper.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem
-                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
-                                            noster fugiat irure amet legam anim culpa.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Jena Karlis</h3>
-                                    <h4>Store Owner</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                            quem veniam duis minim tempor labore quem eram duis noster aute amet eram
-                                            fore quis sint minim.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>Matt Brandon</h3>
-                                    <h4>Freelancer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export
-                                            minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt
-                                            elit fore quem dolore labore illum veniam.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-wrap">
-                                <div class="testimonial-item">
-                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
-                                        alt="">
-                                    <h3>John Larson</h3>
-                                    <h4>Entrepreneur</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                    <p>
-                                        <i class="bi bi-quote quote-icon-left"></i>
-                                        <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
-                                            tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum
-                                            fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                                        <i class="bi bi-quote quote-icon-right"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-
-        </section><!-- /Testimonials Section -->
+        
     </main>
 
     <!-- ======= Footer ======= -->
@@ -356,9 +194,10 @@
                     <a href="index.php" class="logo d-flex align-items-center">
                         <span>Append</span>
                     </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta
-                        donna mare fermentum iaculis eu non diam phasellus.</p>
+                    <p>Explore, innovate, and connect with our vibrant community of tech enthusiasts.
+                         Join us in empowering the next generation of creators and problem solvers through 
+                         immersive hackathons and technical events. Stay updated with the latest happenings,
+                          industry insights, and upcoming events. Let's build, learn, and grow together.</p>
                     <div class="social-links d-flex mt-4">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -378,16 +217,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
+                
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
@@ -401,17 +231,7 @@
             </div>
         </div>
 
-        <div class="container copyright text-center mt-4">
-            <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you've purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-        </div>
-
+       
     </footer><!-- End Footer -->
 
     <!-- Scroll Top Button -->

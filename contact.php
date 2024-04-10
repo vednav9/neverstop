@@ -1,18 +1,21 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Beyond</title>
-
   <!--Boostrap Links-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="css/about.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
 
 </head>
 
@@ -60,7 +63,18 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav><!-- End Nav Menu -->
 
-      <a class="btn-getstarted" href="index.php#about">Profile</a>
+      <?php 
+      if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
+      ?>
+        <a class="btn-getstarted" href="logout.php"><i class="fas fa-sign-out"></i> Logout</a>
+        
+      <?php 
+        } else {
+      ?>
+        <a class="btn-getstarted" href="login.php"><i class="bi bi-person "></i> Sign In</a>
+      <?php 
+        } 
+      ?>
 
     </div>
   </header><!-- End Header -->
@@ -75,8 +89,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap
+            <h2 data-aos="fade-up" data-aos-delay="100">Unlock your potential</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Harness the power of technology to create a brighter future
             </p>
           </div>
           <div class="col-lg-5">
@@ -171,10 +185,13 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.php" class="logo d-flex align-items-center">
-            <span>Append</span>
+            <span>Beyond</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Explore, innovate, and connect with our vibrant
+             community of tech enthusiasts. Join us in empowering 
+             the next generation of creators and problem solvers through immersive
+              hackathons and technical events. Stay updated with the latest happenings, 
+              industry insights, and upcoming events. Let's build, learn, and grow together..</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -194,16 +211,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+    
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
@@ -217,16 +225,7 @@
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>&copy; <span>Copyright</span> <strong class="px-1">Append</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+   
 
   </footer><!-- End Footer -->
 
