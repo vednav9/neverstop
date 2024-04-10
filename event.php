@@ -1,6 +1,7 @@
 <?php 
 session_start();
 ?>
+<?php include "php/ev.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -154,65 +155,33 @@ session_start();
         <!-- Card Section begin here -->
 
         <div class="row">
+        <?php if (mysqli_num_rows($result)) { ?>
+          <?php
+						$i = 0;
+						while ($rows = mysqli_fetch_assoc($result)) {
+							$i++;
+							?>
           <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="images/logo.png" alt="image" style="width:100%">
+            <img class="card-img-top" src="upload/<?php echo $rows['org_banner']; ?>" alt="image" style="width:100%">
             <div class="card-body">
-              <h4 class="card-title">Event name</h4>
-              <h6 class="card-subtitle mb-2 text-muted">College name</h6>
-              <i class="bi bi-people-fill">36 participated</i>
+              <h4 class="card-title"><?php echo $rows['ev_name']; ?></h4>
+              <h6 class="card-subtitle mb-2 text-muted"><?php echo $rows['org_name']; ?></h6>
+              <?php
+              if ($result) {
+                $row = mysqli_fetch_assoc($result);
+                $total_rows = $row['id'];
+            }
+              ?>
+              <i class="bi bi-people-fill"><?php echo $total_rows; ?></i>
               <i class="fa-regular fa-clock"></i> 4 days left
               <p> </p>
               <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
             </div>
           </div>
+          <?php } ?>
+          <?php } ?>
           
-          <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="images/logo.png" alt="image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Event name</h4>
-              <h6 class="card-subtitle mb-2 text-muted">College name</h6>
-              <i class="bi bi-people-fill">36 participated</i>
-              <i class="fa-regular fa-clock"></i> 4 days left
-              <p> </p>
-              <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
-            </div>
-          </div>
-
-          <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="images/logo.png" alt="image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Event name</h4>
-              <h6 class="card-subtitle mb-2 text-muted">College name</h6>
-              <i class="bi bi-people-fill">36 participated</i>
-              <i class="fa-regular fa-clock"></i> 4 days left
-              <p> </p>
-              <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
-            </div>
-          </div>
-
-          <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="images/logo.png" alt="image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Event name</h4>
-              <h6 class="card-subtitle mb-2 text-muted">College name</h6>
-              <i class="bi bi-people-fill">36 participated</i>
-              <i class="fa-regular fa-clock"></i> 4 days left
-              <p> </p>
-              <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
-            </div>
-          </div>
-
-          <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="images/logo.png" alt="image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">Event name</h4>
-              <h6 class="card-subtitle mb-2 text-muted">College name</h6>
-              <i class="bi bi-people-fill">36 participated</i>
-              <i class="fa-regular fa-clock"></i> 4 days left
-              <p> </p>
-              <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
-            </div>
-          </div>
+          
 
         </div>
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <title>
-    Skill Stream
+    Beyond
 </title>
 
 <head>
@@ -23,7 +23,11 @@
     <!--Custom Css-->
     <link rel="stylesheet" href="./CSS/style.css">
     <!--End Custom Css-->
-    <link rel="icon" href="images/title.PNG" type="image/x-icon">
+    <link rel="icon" href="images/logo.PNG" type="image/x-icon">
+
+	<!--CK Editor API-->
+	<script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
 </head>
 
 <body>
@@ -85,11 +89,21 @@
                                         value="<?php echo (isset($_GET['org_no']))?$_GET['org_no']:"" ?>">
                                 </div>
 
-                                <div class="mb-3"><!-- Need Update -->
-                                    <label class="form-label">Oppurtunity type</label>
-                                    <input type="text" class="form-control" name="opp_type"
-                                        value="<?php echo (isset($_GET['opp_type']))?$_GET['opp_type']:"" ?>">
-                                </div>
+                                <div class="mb-3">
+									<label class="form-label">Opportunity type</label>
+									<select class="form-select" name="opp_type">
+										<option value="">Select</option>
+										<option value="Hackthon" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Hackthon") ? "selected" : "" ?>>Hackthon</option>
+										<option value="Quizzez" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Quizzez") ? "selected" : "" ?>>Quizzez</option>
+										<option value="Workshop" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Workshop") ? "selected" : "" ?>>Workshop</option>
+										<option value="Seminar" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Seminar") ? "selected" : "" ?>>Seminar</option>
+										<option value="Competition" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Competition") ? "selected" : "" ?>>Competition</option>
+										<option value="Coding Contest" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Coding Contest") ? "selected" : "" ?>>Coding Contest</option>
+										<option value="Cultural Event" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Cultural Event") ? "selected" : "" ?>>Cultural Event</option>
+										<option value="Seminar" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Seminar") ? "selected" : "" ?>>Seminar</option>
+									</select>
+								</div>
+
 
                                 <div class="mb-3">
                                     <label class="form-label">Website URL</label>
@@ -98,10 +112,20 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Mode of Event</label><br>
-                                    <input type="text" class="form-control" name="mode_ev"
-                                        value="<?php echo (isset($_GET['mode_ev']))?$_GET['mode_ev']:"" ?>">
-                                </div>
+									<label class="form-label">Mode of Event</label><br>
+									<input type="radio" 
+										class="form-check-input"
+										name="mode_ev"
+										value="offline"
+										<?php echo (isset($_GET['mode_ev']) && $_GET['mode_ev'] === "offline") ? "checked" : "" ?>>
+									<label class="form-check-label">Offline</label><br>
+									<input type="radio" 
+										class="form-check-input"
+										name="mode_ev"
+										value="online"
+										<?php echo (isset($_GET['mode_ev']) && $_GET['mode_ev'] === "online") ? "checked" : "" ?>>
+									<label class="form-check-label">Online</label>
+								</div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Organization Location</label>
@@ -112,8 +136,11 @@
 
                                 <div class="mb-3">
                                     <label class="form-label">About</label>
-                                    <input type="text" class="form-control" name="basic_about"
-                                        value="<?php echo (isset($_GET['basic_about']))?$_GET['basic_about']:"" ?>">
+                                    <textarea class="form-control" name="basic_about" rows="5" cols="8"
+                                        value="<?php echo (isset($_GET['basic_about']))?$_GET['basic_about']:"" ?>"></textarea>
+										<script>
+											CKEDITOR.replace('basic_about');
+										</script>
                                 </div>
 
 
@@ -123,18 +150,21 @@
                                 <h4 class="display-4  fs-2">Round & Timeline</h4>
                                 <div class="mb-3">
                                     <label class="form-label">About</label>
-                                    <input type="text" class="form-control" name="rt_about"
-                                        value="<?php echo (isset($_GET['rt_about']))?$_GET['rt_about']:"" ?>">
+                                    <textarea class="form-control" name="rt_about" rows="5" cols="8"
+                                        value="<?php echo (isset($_GET['rt_about']))?$_GET['rt_about']:"" ?>"></textarea>
+										<script>
+											CKEDITOR.replace('rt_about');
+										</script>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Start Date</label>
-                                    <input type="text" class="form-control" name="s_date"
+                                    <input type="datetime-local" class="form-control" name="s_date"
                                         value="<?php echo (isset($_GET['s_date']))?$_GET['s_date']:"" ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">End Date</label>
-                                    <input type="text" class="form-control" name="e_date"
+                                    <input type="datetime-local" class="form-control" name="e_date"
                                         value="<?php echo (isset($_GET['e_date']))?$_GET['e_date']:"" ?>">
                                 </div>
                                 <br>
@@ -142,20 +172,23 @@
                                 <h4 class="display-4  fs-2">Details</h4>
                                 <div class="mb-3">
                                     <label class="form-label">About</label>
-                                    <input type="text" class="form-control" name="detail_about"
-                                        value="<?php echo (isset($_GET['detail_about']))?$_GET['detail_about']:"" ?>">
+                                    <textarea class="form-control" name="detail_about" rows="5" cols="8"
+                                        value="<?php echo (isset($_GET['detail_about']))?$_GET['detail_about']:"" ?>"></textarea>
+										<script>
+											CKEDITOR.replace('detail_about');
+										</script>
                                 </div>
                                 <br>
 
                                 <h4 class="display-4  fs-2">Dates & Deadlines</h4>
                                 <div class="mb-3">
                                     <label class="form-label">Registration Date</label>
-                                    <input type="text" class="form-control" name="dd_r_date"
+                                    <input type="datetime-local" class="form-control" name="dd_r_date"
                                         value="<?php echo (isset($_GET['dd_r_date']))?$_GET['dd_r_date']:"" ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Event Date</label>
-                                    <input type="text" class="form-control" name="dd_ev_date"
+                                    <input type="datetime-local" class="form-control" name="dd_ev_date"
                                         value="<?php echo (isset($_GET['dd_ev_date']))?$_GET['dd_ev_date']:"" ?>">
                                 </div>
                                 <br>
