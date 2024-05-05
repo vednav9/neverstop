@@ -13,6 +13,7 @@ isset($_POST['rt_about']) &&
 isset($_POST['s_date']) &&
 isset($_POST['e_date']) &&
 isset($_POST['detail_about']) &&
+isset($_POST['team']) &&
 isset($_POST['dd_r_date']) &&
 isset($_POST['dd_ev_date']) &&
 isset($_POST['co_name']) &&
@@ -37,6 +38,7 @@ isset($_POST['fees'])){
     $s_date = $_POST['s_date'];
     $e_date = $_POST['e_date'];
     $detail_about = $_POST['detail_about'];
+    $team = $_POST['team'];
     $dd_r_date = $_POST['dd_r_date'];
     $dd_ev_date = $_POST['dd_ev_date'];
     $co_name = $_POST['co_name'];
@@ -46,7 +48,7 @@ isset($_POST['fees'])){
     $prize_am = $_POST['prize_am'];
     $fees = $_POST['fees'];
 
-    $data = "ev_name=".$ev_name."&org_name=".$org_name."&org_email=".$org_email."&org_no=".$org_no."&opp_type=".$opp_type."&web_url=".$web_url."&mode_ev=".$mode_ev."&loc=".$loc."&basic_about=".$basic_about."&rt_about=".$rt_about."&s_date=".$s_date."&e_date=".$e_date."&detail_about=".$detail_about."&dd_r_date=".$dd_r_date."&dd_ev_date=".$dd_ev_date."&co_name=".$co_name."&co_email=".$co_email."&co_no=".$co_no."&prize_name=".$prize_name."&prize_am=".$prize_am."&fees=".$fees;
+    $data = "ev_name=".$ev_name."&org_name=".$org_name."&org_email=".$org_email."&org_no=".$org_no."&opp_type=".$opp_type."&web_url=".$web_url."&mode_ev=".$mode_ev."&loc=".$loc."&basic_about=".$basic_about."&rt_about=".$rt_about."&s_date=".$s_date."&e_date=".$e_date."&detail_about=".$detail_about."&team=".$team."&dd_r_date=".$dd_r_date."&dd_ev_date=".$dd_ev_date."&co_name=".$co_name."&co_email=".$co_email."&co_no=".$co_no."&prize_name=".$prize_name."&prize_am=".$prize_am."&fees=".$fees;
     
     if (empty($ev_name)) {
         $em = "Event name is required";
@@ -100,6 +102,10 @@ isset($_POST['fees'])){
         $em = "Detailed about is required";
         header("Location: ../host.php?error=$em&$data");
         exit;
+    } else if (empty($team)) {
+        $em = "Team Size is required";
+        header("Location: ../host.php?error=$em&$data");
+        exit;
     } else if (empty($co_name)) {
         $em = "Coordinator name is required";
         header("Location: ../host.php?error=$em&$data");
@@ -143,10 +149,10 @@ isset($_POST['fees'])){
                move_uploaded_file($tmp_name, $img_upload_path);
 
                // Insert into Database
-               $sql = "INSERT INTO host(ev_name, org_name, ev_banner, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
-                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+               $sql = "INSERT INTO host(ev_name, org_name, ev_banner, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, team, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
+                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                $stmt = $conn->prepare($sql);
-               $stmt->execute([$ev_name, $org_name, $new_img_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
+               $stmt->execute([$ev_name, $org_name, $new_img_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $team, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
 
                header("Location: ../host.php?success=Your account has been created successfully");
                 exit;
@@ -181,7 +187,7 @@ isset($_POST['fees'])){
 
                // Insert into Database
                $sql = "INSERT INTO host(ev_name, org_name, org_banner, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
-                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,,?,?)";
                $stmt = $conn->prepare($sql);
                $stmt->execute([$ev_name, $org_name, $new_img_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
 
@@ -226,10 +232,10 @@ isset($_POST['fees'])){
                move_uploaded_file($tmp_name2, $img_upload_path2);
 
                // Insert into Database
-               $sql = "INSERT INTO host(ev_name, org_name, ev_banner, org_banner, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
-                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+               $sql = "INSERT INTO host(ev_name, org_name, ev_banner, org_banner, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, team, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
+                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
                $stmt = $conn->prepare($sql);
-               $stmt->execute([$ev_name, $org_name, $new_img_name1, $new_img_name2, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
+               $stmt->execute([$ev_name, $org_name, $new_img_name1, $new_img_name2, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $team, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
 
                header("Location: ../host.php?success=Your account has been created successfully");
                 exit;
@@ -245,10 +251,10 @@ isset($_POST['fees'])){
          }       
       }
       else {
-        $sql = "INSERT INTO host(ev_name, org_name, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
-        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO host(ev_name, org_name, org_email, org_no, opp_type, web_url, mode_ev, loc, basic_about, rt_about, s_date, e_date, detail_about, team, dd_r_date, dd_ev_date, co_name, co_email, co_no, prize_name, prize_am, fees) 
+        VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([$ev_name, $org_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
+        $stmt->execute([$ev_name, $org_name, $org_email, $org_no, $opp_type, $web_url, $mode_ev, $loc, $basic_about, $rt_about, $s_date, $e_date, $detail_about, $team, $dd_r_date, $dd_ev_date, $co_name, $co_email, $co_no, $prize_name, $prize_am, $fees]);
 
        	header("Location: ../host.php?success=Your account has been created successfully");
    	    exit;

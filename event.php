@@ -45,24 +45,6 @@ session_start();
           <li><a href="courses.php">Learn</a></li>
           <li><a href="event.php">Event</a></li>
           <li><a href="contact.php">Contact Us</a></li>
-          <!--<li class="dropdown has-dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown has-dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down"></i></a>
-                <ul class="dd-box-shadow">
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>-->
         </ul>
 
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -105,45 +87,38 @@ session_start();
           <ul>
           <li class="dropdown has-dropdown"><a href="#"><span>Event Type</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Hackthon</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="#">Worshop</a></li>
-              <li><a href="#">Seminar</a></li>
-              <li><a href="#">Competition</a></li>
-              <li><a href="#">Codind Contest</a></li>
-              <li><a href="#">Cultural event</a></li>
-              <li><a href="#">Seminar</a></li>
+              <li><a href="#" class="category-filter" data-category="Hackathon">Hackathon</a></li>
+              <li><a href="#" class="category-filter" data-category="Quizzes">Quizzes</a></li>
+              <li><a href="#" class="category-filter" data-category="Worshop">Worshop</a></li>
+              <li><a href="#" class="category-filter" data-category="Seminar">Seminar</a></li>
+              <li><a href="#" class="category-filter" data-category="Competition">Competition</a></li>
+              <li><a href="#" class="category-filter" data-category="Coding Contest">Coding Contest</a></li>
+              <li><a href="#" class="category-filter" data-category="Cultural event">Cultural event</a></li>
             </ul>
           </li>
           <li class="dropdown has-dropdown"><a href="#"><span>Sort by</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Prizez high to low</a></li>
-              <li><a href="#">Days left low to high</a></li>
+                <li><a href="#" class="sort-filter" data-sort="prize_high_low">Prize high to low</a></li>
+                <li><a href="#" class="sort-filter" data-sort="days_left_low_high">Days left low to high</a></li>
             </ul>
           </li>
           <li class="dropdown has-dropdown"><a href="#"><span>Status</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Live</a></li>
-              <li><a href="#">Closed</a></li>
+                <li><a href="#" class="status-filter" data-status="live">Live</a></li>
+                <li><a href="#" class="status-filter" data-status="closed">Closed</a></li>
             </ul>
           </li>
           <li class="dropdown has-dropdown"><a href="#"><span>Team size</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">2+</a></li>
+                <li><a href="#" class="team-filter" data-team="1">1</a></li>
+                <li><a href="#" class="team-filter" data-team="2">2</a></li>
+                <li><a href="#" class="team-filter" data-team="4">4</a></li>
             </ul>
           </li>
           <li class="dropdown has-dropdown"><a href="#"><span>Payment</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="#">Paid</a></li>
-              <li><a href="#">Free</a></li>
-            </ul>
-          </li>
-          <li class="dropdown has-dropdown"><a href="#"><span>Eligibility</span> <i class="bi bi-chevron-down"></i></a>
-            <ul class="dd-box-shadow">
-              <li><a href="#">Professional</a></li>
-              <li><a href="#">Collage student</a></li>
+                <li><a href="#" class="payment-filter" data-payment="paid">Paid</a></li>
+                <li><a href="#" class="payment-filter" data-payment="free">Free</a></li>
             </ul>
           </li>
           <li>
@@ -154,38 +129,167 @@ session_start();
 
         <!-- Card Section begin here -->
 
-        <div class="row">
-        <?php if (mysqli_num_rows($result)) { ?>
-          <?php
-						$i = 0;
-						while ($rows = mysqli_fetch_assoc($result)) {
-							$i++;
-							?>
-          <div class="card" style="width:20rem;margin:20px">
-            <img class="card-img-top" src="upload/<?php echo $rows['org_banner']; ?>" alt="image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title"><?php echo $rows['ev_name']; ?></h4>
-              <h6 class="card-subtitle mb-2 text-muted"><?php echo $rows['org_name']; ?></h6>
-              <?php
-              if ($result) {
-                $row = mysqli_fetch_assoc($result);
-                $total_rows = $row['id'];
-            }
-              ?>
-              <i class="bi bi-people-fill"><?php echo $total_rows; ?></i>
-              <i class="fa-regular fa-clock"></i> 4 days left
-              <p> </p>
-              <a href="javascript:void(0)" class="btn btn-primary">Apply</a>
-            </div>
+        <div class="row" id="event-cards">
+            <?php if (mysqli_num_rows($result)) { ?>
+                <?php while ($rows = mysqli_fetch_assoc($result)) { ?>
+                    <div class="card <?php echo $rows['opp_type']; ?>" data-status="<?php echo $rows['dd_r_date'] > date('Y-m-d H:i:s') ? 'live' : 'closed'; ?>" data-team="<?php echo $rows['team']; ?>" data-payment="<?php echo $rows['fees'] == 0 ? 'free' : 'paid'; ?>" style="width:20rem;margin:20px">
+                        <img class="card-img-top" src="upload/<?php echo $rows['org_banner']; ?>" alt="image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="event_display.php?id=<?php echo $rows['id'] ?>"><?php echo $rows['ev_name']; ?></a></h4>
+                            <h6 class="card-subtitle mb-2 text-muted"><?php echo $rows['org_name']; ?></h6>
+                            <?php
+                            $now = time();
+                            $event_date = strtotime($rows['dd_r_date']);
+                            $days_left = ($event_date - $now) / (60 * 60 * 24);
+                            ?>
+                            <?php if ($days_left > 0) { ?>
+                                <p class="card-days-left"><i class="fa-regular fa-clock"></i> <?php echo floor($days_left); ?> days left</p>
+                            <?php } else { ?>
+                                <p class="card-days-left"><i class="fa-regular fa-clock"></i> Closed</p>
+                            <?php } ?>
+                            <?php if ($rows['fees'] == 0) { ?>
+                                <p class="card-payment">Fee: Free</p>
+                            <?php } else { ?>
+                                <p class="card-payment">Fee: <?php echo $rows['fees']; ?></p>
+                            <?php } ?>
+                            <!-- Add class for team size -->
+                            <p class="card-team-size">Team size: <?php echo $rows['team']; ?></p>
+                            <!-- Add class for status -->
+                            <p class="card-status">Status: <?php echo $rows['dd_r_date'] > date('Y-m-d H:i:s') ? 'Live' : 'Closed'; ?></p>
+                            <!-- Add class for prize -->
+                            <p class="card-prize">Prize: <?php echo $rows['prize_am']; ?></p>
+                            <a href="apply.php" class="btn btn-primary">Apply</a>
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php } ?>
           </div>
-          <?php } ?>
-          <?php } ?>
-          
-          
 
-        </div>
 
-        
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryLinks = document.querySelectorAll('.category-filter');
+        const sortLinks = document.querySelectorAll('.sort-filter');
+        const statusLinks = document.querySelectorAll('.status-filter');
+        const teamLinks = document.querySelectorAll('.team-filter');
+        const paymentLinks = document.querySelectorAll('.payment-filter');
+        const eventCards = document.getElementById('event-cards');
+
+        categoryLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const category = this.getAttribute('data-category');
+                filterCards(category);
+            });
+        });
+
+        sortLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sortType = this.getAttribute('data-sort');
+                sortCards(sortType);
+            });
+        });
+
+        statusLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const status = this.getAttribute('data-status');
+                filterCardsByStatus(status);
+            });
+        });
+
+        teamLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const teamSize = this.getAttribute('data-team');
+                filterCardsByTeam(teamSize);
+            });
+        });
+
+        paymentLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const paymentStatus = this.getAttribute('data-payment');
+                filterCardsByPayment(paymentStatus);
+            });
+        });
+
+        function filterCards(category) {
+            const cards = eventCards.querySelectorAll('.card');
+            cards.forEach(function (card) {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function sortCards(sortType) {
+            const cards = Array.from(eventCards.querySelectorAll('.card'));
+            switch (sortType) {
+                case 'prize_high_low':
+                    cards.sort((a, b) => {
+                        const feeA = parseFloat(a.querySelector('.card-payment').textContent.split(': ')[1]);
+                        const feeB = parseFloat(b.querySelector('.card-payment').textContent.split(': ')[1]);
+                        return feeB - feeA;
+                    });
+                    break;
+                case 'days_left_low_high':
+                    cards.sort((a, b) => {
+                        const daysA = parseInt(a.querySelector('.card-days-left').textContent.split(' ')[0]);
+                        const daysB = parseInt(b.querySelector('.card-days-left').textContent.split(' ')[0]);
+                        return daysA - daysB;
+                    });
+                    break;
+            }
+            eventCards.innerHTML = '';
+            cards.forEach(card => eventCards.appendChild(card));
+        }
+
+        function filterCardsByStatus(status) {
+            const cards = eventCards.querySelectorAll('.card');
+            cards.forEach(function (card) {
+                const cardStatus = card.getAttribute('data-status');
+                if (status === 'all' || cardStatus === status) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function filterCardsByTeam(teamSize) {
+            const cards = eventCards.querySelectorAll('.card');
+            cards.forEach(function (card) {
+                const cardTeamSize = card.getAttribute('data-team');
+                if (teamSize === 'all' || cardTeamSize === teamSize) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function filterCardsByPayment(paymentStatus) {
+            const cards = eventCards.querySelectorAll('.card');
+            cards.forEach(function (card) {
+                const cardPaymentStatus = card.getAttribute('data-payment');
+                if (paymentStatus === 'all' || cardPaymentStatus === paymentStatus) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Show all cards initially
+        filterCards('all');
+    });
+</script>
+
+
 
         <!-- Card section end here -->
 
@@ -274,7 +378,7 @@ session_start();
   </div>
 
   
-  <script src="js/main.js"></script>
+  <script src="js/ev.js"></script>
 
 </body>
 
