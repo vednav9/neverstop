@@ -2,7 +2,7 @@
 <html lang="en">
 </html>
 <title>
-Skill Stream
+Beyond
 </title>
 <head>
     <!-- Required meta tags -->
@@ -29,10 +29,10 @@ Skill Stream
 <div class="d-flex justify-content-center align-items-center vh-100">
     	
     	<form class="shadow w-450 p-3" 
-    	      action="php/login.php" 
+    	      action="php/college_login.php" 
     	      method="post">
 
-    		<h4 class="display-4  fs-1">LOGIN</h4><br>
+    		<h4 class="display-4  fs-1">COLLEGE LOGIN</h4><br>
     		<?php if(isset($_GET['error'])){ ?>
     		<div class="alert alert-primary" role="alert">
 			  <?php echo $_GET['error']; ?>
@@ -42,11 +42,11 @@ Skill Stream
 			
 
 		<div class="mb-3">
-		    <label class="form-label">User name</label>
+		    <label class="form-label">COLLEGE Name</label>
 		    <input type="text" 
 		           class="form-control"
-		           name="uname"
-		           value="<?php echo (isset($_GET['uname']))?$_GET['uname']:"" ?>">
+		           name="cname"
+		           value="<?php echo (isset($_GET['cname']))?$_GET['cname']:"" ?>">
 		  </div>
 
 		  <div class="mb-3">
@@ -57,10 +57,9 @@ Skill Stream
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Login</button>
-		  <a href="register.php" class="link-secondary">Sign Up</a>
 		  <br>
 		  <br>
-		  Login as <a href="college_login.php">College Admin</a><br>
+		  Login as <a href="login.php">User</a><br>
 		  Login as <a href="admin_login.php">Admin</a>
 		</form>
     </div>

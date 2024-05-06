@@ -158,7 +158,7 @@ session_start();
                             <p class="card-status">Status: <?php echo $rows['dd_r_date'] > date('Y-m-d H:i:s') ? 'Live' : 'Closed'; ?></p>
                             <!-- Add class for prize -->
                             <p class="card-prize">Prize: <?php echo $rows['prize_am']; ?></p>
-                            <a href="apply.php" class="btn btn-primary">Apply</a>
+                            <a href="apply.php?ev_name=<?php echo urlencode($rows['ev_name']); ?>" class="btn btn-primary">Apply</a>
                         </div>
                     </div>
                 <?php } ?>
