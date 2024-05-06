@@ -69,6 +69,23 @@
                                 </div>
 
                                 <div class="mb-3">
+                                    <label class="form-label">Organization user name</label>
+                                    <input type="text" class="form-control" name="collegename"
+                                        value="<?php echo (isset($_GET['collegename']))?$_GET['collegename']:"" ?>">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+                                    <input type="password" class="form-control" name="pass"
+                                        value="<?php echo (isset($_GET['pass']))?$_GET['pass']:"" ?>">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" name="cpass"
+                                        value="<?php echo (isset($_GET['cpass']))?$_GET['cpass']:"" ?>">
+                                </div>
+
+                                <div class="mb-3">
                                     <label class="form-label">Event banner</label>
                                     <input type="file" class="form-control" name="ev_banner">
                                 </div>
