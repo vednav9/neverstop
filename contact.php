@@ -10,7 +10,7 @@ session_start();
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="css/contact.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <!-- font awesome cdn link  -->
@@ -84,7 +84,7 @@ session_start();
     <!-- Hero Section - Home Page -->
     <section id="hero" class="hero">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="contactbg.jpg" alt="" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -108,7 +108,7 @@ session_start();
 
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
         <iframe style="border:0; width: 100%; height: 300px;"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+          src="https://www.google.com/maps/place/New+Horizon+Institute+of+Technology+%26+Management/@19.2657554,72.9746102,18.63z/data=!3m1!5s0x3be7bb9767b9224f:0x3e866a252546678b!4m6!3m5!1s0x3be7bb97393918f5:0x8daad21d2f9d3c8f!8m2!3d19.2663808!4d72.9747075!16s%2Fg%2F11b74nr667?entry=ttu"
           frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!-- End Google Maps -->
 
@@ -121,7 +121,7 @@ session_start();
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>New Horizon institute, Anand Nagar, Thane</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -215,9 +215,9 @@ session_start();
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
+          <p>New Horizon Institute</p>
+          <p>Anand Nagar Thane</p>
+          <p>India</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>

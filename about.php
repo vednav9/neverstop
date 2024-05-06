@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Template Main CSS File -->
-    <link href="css/about.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
 
 </head>
 
@@ -70,14 +70,13 @@
         <!-- Hero Section - Home Page -->
         <section id="hero" class="hero">
 
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+            <img src="aboutbg.jpg" alt="" data-aos="fade-in">
 
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-                        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites
-                            with Bootstrap
+                        <h2 data-aos="fade-up" data-aos-delay="100">Unlock Your Potential</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">Harness the power of technology to create a brighter future
                         </p>
                     </div>
                 </div>
@@ -114,20 +113,17 @@
                     </div>
 
                     <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-                        <h3>Voluptatem dignissimos provident quasi corporis</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
-                        </p>
+                        <h3>Here are some features you might consider for Beyond</h3>
+                        
                         <ul>
-                            <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</span></li>
-                            <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                                    storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Passionate Team: Our dedicated team of tech
+                                 enthusiasts and knowledge seekers is committed to providing a vibrant
+                                  platform for hackathons and quizzes.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Innovation Hub: We aim to 
+                                foster creativity and innovation by connecting aspiring developers and 
+                                problem solvers from diverse backgrounds.</span></li>
+                            <li><i class="bi bi-check-circle"></i> <span>Accessible Platform: Our user-friendly platform ensures that
+                                 participants of all skill levels can easily navigate and participate in our hackathons and quizzes.</span></li>
                         </ul>
                     </div>
 
@@ -138,50 +134,6 @@
         </section><!-- /About Us Section -->
 
         <!-- Stats About Section -->
-        <section id="stats-about" class="stats-about section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p class="">Students</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p class="">Courses</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p class="">Events</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
-                                class="purecounter"></span>
-                            <p class="">Trainers</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-
-                </div>
-
-            </div>
-
-        </section><!-- /Stats About Section -->
-
         
     </main>
 
@@ -192,7 +144,7 @@
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
                     <a href="index.php" class="logo d-flex align-items-center">
-                        <span>Append</span>
+                        <span>Beyond</span>
                     </a>
                     <p>Explore, innovate, and connect with our vibrant community of tech enthusiasts.
                          Join us in empowering the next generation of creators and problem solvers through 
@@ -221,9 +173,9 @@
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p>United States</p>
+                    <p>New Horizon Institute</p>
+                    <p>Anand Nagar Thane</p>
+                    <p>India</p>
                     <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
                     <p><strong>Email:</strong> <span>info@example.com</span></p>
                 </div>

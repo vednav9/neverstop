@@ -108,46 +108,7 @@ session_start();
     </section><!-- End Hero Section -->
 
     <!-- Stats Section - Home Page -->
-    <section id="stats" class="stats">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
+    
         </div>
 
       </div>
@@ -160,7 +121,7 @@ session_start();
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Here are some services you might consider</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -246,20 +207,20 @@ session_start();
       <!--  Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Here are some features you might consider</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>Corporis temporibus maiores provident</h3>
+            <h3>Provide a platform for participants to submit their projects</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            One key feature for a website hosting both hackathons and quizzes could be a versatile project submission 
+            platform. This feature would allow participants
+             to submit their completed hackathon projects and quiz responses seamlessly in one unified interface.
             </p>
-            <a href="#" class="btn btn-get-started">Get Started</a>
+            
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
@@ -271,20 +232,24 @@ session_start();
 
         <div class="row gy-4 align-items-stretch justify-content-between features-item ">
           <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <img src="assets/img/features-light-3.jpg" class="img-fluid" alt="">
+            <img src="images/statsbg.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3>Sunt consequatur ad ut est nulla</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut
-              quia voluptatem hic voluptas dolor doloremque.</p>
+            <h3> The key objectives include: </h3>
+            <p> Our website serves as a solution to the Beyond aims to address these challenges by 
+providing an all-in-one platform that connects organizers, colleges, and participants. Our solution 
+includes: </p>
             <ul>
-              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span>
+              <li><i class="bi bi-check"></i> <span>Event Hosting: A user-friendly interface for 
+                organizers to create, manage, and promote events across India.</span></li>
+              <li><i class="bi bi-check"></i><span> Diverse Opportunities: Offering a wide range of event types
+                , from coding contests to seminars, ensuring inclusivity.</span>
               </li>
-              <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.
+              <li><i class="bi bi-check"></i> <span>Skill Enhancement: Curated courses to empower participants with 
+                technical skills.</span>.
               </li>
             </ul>
-            <a href="#" class="btn btn-get-started align-self-start">Get Started</a>
+           
           </div>
         </div><!-- Features Item -->
 
@@ -302,7 +267,7 @@ session_start();
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.php" class="logo d-flex align-items-center">
-            <span>Append</span>
+            <span>Beyond</span>
           </a>
           <p>Explore, innovate, and connect with our vibrant community of tech enthusiasts. 
             Join us in empowering the next generation of creators and problem solvers through
@@ -331,9 +296,9 @@ session_start();
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
+          <p>New Horizon Institute</p>
+          <p>Anand Nagar Thane</p>
+          <p>India</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>

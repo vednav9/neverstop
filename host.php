@@ -94,7 +94,7 @@
 									<select class="form-select" name="opp_type">
 										<option value="">Select</option>
 										<option value="Hackthon" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Hackthon") ? "selected" : "" ?>>Hackthon</option>
-										<option value="Quizzez" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Quizzez") ? "selected" : "" ?>>Quizzez</option>
+										<option value="Quizzes" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Quizzes") ? "selected" : "" ?>>Quizzes</option>
 										<option value="Workshop" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Workshop") ? "selected" : "" ?>>Workshop</option>
 										<option value="Seminar" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Seminar") ? "selected" : "" ?>>Seminar</option>
 										<option value="Competition" <?php echo (isset($_GET['opp_type']) && $_GET['opp_type'] === "Competition") ? "selected" : "" ?>>Competition</option>
